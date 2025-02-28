@@ -23,7 +23,7 @@ export default function CreateStudent() {
       .then((res) => {
         res.json();
         alert('Student data saved successfully');
-        navigate("/")
+        navigate("/list")
   })
       .then((data) => console.log("Saved:", data))
       .catch((err) => console.error(err));
@@ -36,7 +36,7 @@ export default function CreateStudent() {
           <form onSubmit={handleSubmit}>
 
             <Form.Group className="mb-3">
-              <Form.Label>Name </Form.Label>
+              <Form.Label>Name<span className='text-danger'>*</span> </Form.Label>
               <Form.Control
                 type="text"
                 name="name"
@@ -47,7 +47,7 @@ export default function CreateStudent() {
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Label>Email address</Form.Label>
+              <Form.Label>Email<span className='text-danger'>*</span></Form.Label>
               <Form.Control
                 type="email"
                 name="email"
@@ -59,7 +59,7 @@ export default function CreateStudent() {
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Label>Phone </Form.Label>
+              <Form.Label>Phone<span className='text-danger'>*</span> </Form.Label>
               <Form.Control
                 type="text"
                 name="phone"
@@ -69,7 +69,7 @@ export default function CreateStudent() {
               />
             </Form.Group>
 
-            <Form.Label>Place </Form.Label>
+            <Form.Label>Place<span className='text-danger'>*</span> </Form.Label>
             <Form.Select
               aria-label="Default select example"
               name="place"
@@ -85,7 +85,7 @@ export default function CreateStudent() {
 
             <div className="d-flex mt-4 justify-content-start">
               <button className="btn btn-primary me-2"> Save</button>
-              <Link className="btn btn-danger" to="/">
+              <Link className="btn btn-danger" to="/list">
                 {" "}
                 Back
               </Link>

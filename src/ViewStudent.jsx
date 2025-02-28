@@ -32,7 +32,7 @@ export default function ViewStudent() {
           <Link className="btn btn-primary me-2" to={`/student/edit/${studentId}`}>
                 Edit
               </Link>
-              <Link className="btn btn-danger" to="/">
+              <Link className="btn btn-danger" to="/list">
                 Back
               </Link>
             </div>

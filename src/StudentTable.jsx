@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { Table } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './App.css';
 
 export default function StudentTable() {
 const [students, setStudents]= useState('')
+const navigate = useNavigate();
 
   useEffect(()=>{
     fetch('http://localhost:8000/students')
@@ -30,6 +31,12 @@ const [students, setStudents]= useState('')
     })
     }
   }
+
+  const logOut =()=>{
+    if(window.confirm("Are you sure to logout ?")){
+      navigate("/");
+    }
+  }
   return (
 
     // json-server --watch db.json --port 8000    use this command to get table data
@@ -42,9 +49,12 @@ const [students, setStudents]= useState('')
             Students List
           </Card.Title>
           <div className="d-flex justify-content-end">
-            <Link className="btn btn-primary" to="/student/create/">
+            <Link className="btn btn-primary me-2" to="/student/create/">
               Add Student
             </Link>
+            <button className="btn btn-primary" onClick={logOut}>
+              Logout
+            </button>
           </div>
           <div className="table-responsive mt-4">
             <Table className="table table-bordered">
