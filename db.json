@@ -1,0 +1,39 @@
+{
+  "students": [
+    {
+      "name": "akshay",
+      "email": "akshay@gmail.com",
+      "phone": "9090909090",
+      "place": "Chakan",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "kumar",
+      "email": "kumar@gmail.com",
+      "phone": "1234567890",
+      "place": "mumbai"
+    },
+    {
+      "name": "Ajay Kumar",
+      "email": "ajay@inevitableinfotech.com",
+      "phone": "505656565",
+      "place": "Pune",
+      "id": "jTehOnH"
+    },
+    {
+      "name": "saurabh",
+      "email": "saurabh@gmail.com",
+      "phone": "44454456464",
+      "place": "Pune",
+      "id": "Q7NbB96"
+    },
+    {
+      "name": "sharad",
+      "email": "skadwaikar.queenzend@gmail.com",
+      "phone": "55dddddd",
+      "place": "Chakan",
+      "id": "fzPbv4A"
+    }
+  ]
+}

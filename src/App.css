@@ -1,0 +1,16 @@
+.theadd{
+  background-color: rgb(42, 97, 148) !important;
+  color: white;
+}
+
+.form-label {
+  margin-bottom: 5px !important;
+  font-weight: 500;
+}
+
+.heading{
+  background-color: #6a2458;
+  height: 55px;
+  border-radius: 5px;
+  color: wheat !important;
+}
