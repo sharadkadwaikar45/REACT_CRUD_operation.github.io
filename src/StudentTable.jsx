@@ -52,7 +52,7 @@ const navigate = useNavigate();
             <Link className="btn btn-primary me-2" to="/student/create/">
               Add Student
             </Link>
-            <button className="btn btn-primary" onClick={logOut}>
+            <button className="btn btn-danger" onClick={logOut}>
               Logout
             </button>
           </div>
