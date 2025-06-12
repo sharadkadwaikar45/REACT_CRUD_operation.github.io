@@ -1,5 +1,7 @@
  /* json-server --watch db.json --port 8000    use this command to get table data */
 
+/* "homepage": "https://sharadkadwaikar45.github.io/REACT_CRUD_operation.github.io",    add in package.json if want to create page on git hub */
+
 .theadd{
   background-color: rgb(42, 97, 148) !important;
   color: white;
