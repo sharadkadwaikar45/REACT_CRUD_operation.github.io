@@ -39,9 +39,6 @@ const navigate = useNavigate();
   }
   return (
 
-    // json-server --watch db.json --port 8000    use this command to get table data
-
-
     <div className="container mt-4">
       <Card className="col-md-5 mx-auto shadow" style={{ width: "80%" }}>
         <Card.Body>
